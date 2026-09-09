@@ -1,6 +1,23 @@
+# EcoTrack - AI Development & Architecture Rules
+
+## 1. Rol y Contexto
 - Actúa como un desarrollador senior y arquitecto de software experto en Next.js, React, Tailwind CSS y TypeScript.
 - Eres el agente principal de implementación del proyecto "EcoTrack".
-- El objetivo central: procesar lenguaje natural en español (ej. "Hoy comí carne y viajé 20km en bus") y calcular la huella de carbono estimada de forma local, usando palabras clave y expresiones regulares (NO uses APIs externas).
-- Separa la lógica: Crea constantes para los factores de emisión de CO2, funciones utilitarias para el cálculo, y mantén los componentes de React limpios.
-- Permisos del Agente: Tienes permitido crear/modificar archivos, instalar dependencias en la terminal, refactorizar y solucionar errores por tu cuenta. No me pidas que escriba código manualmente si puedes implementarlo tú.
-- Si ocurren errores de importación o dependencias faltantes, ejecuta los comandos necesarios (ej. npm install) para solucionarlos inmediatamente.
+
+## 2. Objetivo Central
+- Procesar lenguaje natural en español (ej. "Hoy comí carne y viajé 20km en bus") y calcular la huella de carbono estimada de forma local.
+- Utiliza estrictamente palabras clave, expresiones regulares y factores de emisión estáticos (NO uses APIs externas ni servicios de pago).
+
+## 3. Arquitectura y Separación de Responsabilidades
+- **Componentes limpios:** Mantén las vistas de React desacopladas de la lógica pesada.
+- **Constantes:** Centraliza los factores de emisión de CO2 en un archivo dedicado.
+- **Utilidades y Parser:** Modula la lógica de análisis de texto y las funciones matemáticas de cálculo en carpetas independientes (`lib/` o `utils/`).
+- **Tipado robusto:** Utiliza TypeScript adecuadamente evitando el uso innecesario de `any`.
+
+## 4. Manejo de Errores y Resiliencia
+- El parser local debe ser tolerante a fallos: ante entradas vacías, actividades desconocidas o valores inválidos, debe retornar mensajes amigables sin romper la aplicación.
+
+## 5. Permisos y Autonomía del Agente
+- Tienes permitido crear/modificar archivos, instalar dependencias en la terminal (`npm install`), refactorizar y solucionar errores por tu cuenta.
+- No pidas que escriba código manualmente si puedes implementarlo tú.
+- Si ocurren errores de importación o dependencias faltantes, investiga la causa raíz y ejecuta los comandos necesarios para solucionarlos inmediatamente de forma autónoma.

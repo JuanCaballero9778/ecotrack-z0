@@ -9,8 +9,8 @@ Aplicación web interactiva diseñada para registrar y estimar la huella de carb
 
 ## 🔗 Enlaces del Proyecto
 
-- **Repositorio en GitHub:** 
-- **Demo en Vercel (Producción):** 
+- **Repositorio en GitHub:** https://github.com/JuanCaballero9778/ecotrack-z0
+- **Demo en Vercel (Producción):** https://ecotrack-sepia-ten.vercel.app/
 
 ---
 
@@ -47,3 +47,11 @@ Aplicación web interactiva diseñada para registrar y estimar la huella de carb
 
 - **Entrada del usuario:** `"Hoy comí carne y viajé 20 km en bus"`
 - **Salida esperada del sistema:** Cálculo estimado desglosado (ej. desglose de transporte en autobús + porción de consumo de carne, arrojando el total de kg de $CO_2$ equivalente).
+
+## 🖼️ Capturas del Ecosistema
+
+*Entorno de desarrollo (Cursor + v0 / Vercel) operando en conjunto:*
+![Entorno Cursor y v0](./docs/images/cursor-v0.png)
+
+## 📸 Evidencia del Entorno
+![Entorno Operativo](./docs/images/v0.png)
