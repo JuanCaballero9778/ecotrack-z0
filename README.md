@@ -1,7 +1,7 @@
 # EcoTrack — MVP de Huella de Carbono 
 *Proyecto Integrador: Configuración del Ecosistema y Primer "Vibe"*
 
-Juan Pablo Caballero Castellanos
+**Autor:** Juan Pablo Caballero Castellanos
 
 Aplicación web interactiva diseñada para registrar y estimar la huella de carbono diaria a partir de descripciones cotidianas en lenguaje natural (por ejemplo: *"Hoy comí carne y viajé 20 km en bus"*). Este proyecto fue desarrollado bajo la metodología de **Vibe Coding**, donde la arquitectura, las reglas y la visión del producto se definieron previamente, delegando la construcción, el diseño y la integración a agentes de IA (Cursor y v0).
 
@@ -9,8 +9,8 @@ Aplicación web interactiva diseñada para registrar y estimar la huella de carb
 
 ## 🔗 Enlaces del Proyecto
 
-- **Repositorio en GitHub:** https://github.com/JuanCaballero9778/ecotrack-z0
-- **Demo en Vercel (Producción):** https://ecotrack-sepia-ten.vercel.app/
+- **Repositorio en GitHub:** [https://github.com/JuanCaballero9778/ecotrack-z0](https://github.com/JuanCaballero9778/ecotrack-z0)
+- **Demo en Vercel (Producción):** [https://ecotrack-sepia-ten.vercel.app/](https://ecotrack-sepia-ten.vercel.app/)
 
 ---
 
@@ -19,7 +19,7 @@ Aplicación web interactiva diseñada para registrar y estimar la huella de carb
 - **Framework:** Next.js (App Router)
 - **Lenguaje:** TypeScript
 - **Estilos:** Tailwind CSS
-- **Lógica de Negocio:** Parser local en español basado en reglas deterministas y factores de emisión estáticos (sin dependencias de APIs externas o pasarelas de pago).
+- **Lógica de Negocio:** Parser local en español basado en reglas deterministas y factores de emisión estáticos (sin dependencias de APIs externas).
 
 ---
 
@@ -30,7 +30,8 @@ Aplicación web interactiva diseñada para registrar y estimar la huella de carb
 | **Reglas del Agente** | `.cursorrules` | Archivo raíz que define el rol, el stack y las restricciones de la IA. |
 | **Vibe Report (Reflexión)** | `VIBE_REPORT.md` | Documento de análisis sobre la experiencia de desarrollo asistido. |
 | **Interfaz Visual (UI)** | `src/app/page.tsx` | Componente principal optimizado y diseñado mediante v0. |
-| **Parser y Lógica** | `src/lib/` (o lógica integrada) | Módulos encargados de procesar el texto e interpretar las emisiones. |
+| **Parser y Lógica** | `src/lib/` | Módulos encargados de procesar el texto e interpretar las emisiones. |
+| **Capturas del Entorno** | `docs/images/` | Evidencias visuales del funcionamiento conjunto de Cursor y v0. |
 
 ---
 
@@ -48,10 +49,13 @@ Aplicación web interactiva diseñada para registrar y estimar la huella de carb
 - **Entrada del usuario:** `"Hoy comí carne y viajé 20 km en bus"`
 - **Salida esperada del sistema:** Cálculo estimado desglosado (ej. desglose de transporte en autobús + porción de consumo de carne, arrojando el total de kg de $CO_2$ equivalente).
 
-## 🖼️ Capturas del Ecosistema
+---
 
-*Entorno de desarrollo (Cursor + v0 / Vercel) operando en conjunto:*
-![Entorno Cursor y v0](./docs/images/cursor-v0.png)
+## 🖼️ Evidencia del Ecosistema
+
+*Entorno de desarrollo operando en conjunto (Cursor y v0):*
+
+![Entorno de Cursor y v0](./docs/images/cursor-v0.png)
 
 ## 📸 Evidencia del Entorno
 ![Entorno Operativo](./docs/images/v0.png)
